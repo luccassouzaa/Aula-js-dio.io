@@ -31,5 +31,3 @@ if (tipoCombustivel === 'Etanol') {
 } else {
     console.log("Valor invalido");
 }
-
-
