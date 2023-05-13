@@ -1,6 +1,6 @@
 const numero = 0;
 
-const numeroDivisivel = (numero % 5) === 0; // condicional na mesma line
+const isNumeroDivisivel = (numero % 5) === 0; // condicional na mesma line
 
 /*
 
@@ -10,10 +10,14 @@ const numeroDivisivel = (numero % 5) === 0; // condicional na mesma line
 
 */
 
+// Caso uma variavel seja booleana, Usar o prefixo "isNomeDaVariavel"
+// Caso uma variavel uma pergunta, Usar o prefixo "ehNomeDaVariavel"
+
+
 if(numero == 0){
     console.log("Numero inválido!")
 }
-else if(numeroDivisivel){
+else if(isNumeroDivisivel){
     console.log("Sim");
 }
 else{
