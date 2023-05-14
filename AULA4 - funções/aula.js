@@ -17,12 +17,10 @@ function classificarImc(imc) {
     }
 }
 
-function main(){
+(function(){
     const peso = 80;
     const altura = 1.80;
     
     const imc = calcularImc(peso, altura);
     console.log(classificarImc(imc));
-}
-
-main();
+})(); // criar uma função e ja executar ela
