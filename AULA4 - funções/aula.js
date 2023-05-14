@@ -15,7 +15,10 @@ function incrementarjuros(valor, percentualJuros){
     return valor + valorDeAcrecimo;
 }
 
+console.log(incrementarjuros(100, 10));
 console.log(incrementarjuros(100, 15));
+console.log(incrementarjuros(100, 20));
+
 
 // ----------------- //
 
