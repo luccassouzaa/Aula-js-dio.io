@@ -1,21 +1,30 @@
-class Pessoa{
+class Pessoa {
     nome;
     idade;
     anoDeNascimento
 
-    constructor(nome, idade){
+    constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
         this.anoDeNascimento = 2023 - idade;
     }// sempre passará pelo constructor (algo padrão)
 
-    descrever(){
+    descrever() {
         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
     }
 }
 
-const luccas = new Pessoa('luccas',19);
+function compararPessoas(p1, p2) {
+    if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velho(a) que ${p2.nome}`);
+    } else if (p2.idade > p1.idade) {
+        console.log(`${p2.nome} é mais velho(a) que ${p1.nome}`);
+    } else {
+        console.log(`${p1.nome} e ${p2.nome} tem a mesma idade`);
+    }
+}
 
-const ana = new Pessoa('ana', 17);
+const luccas = new Pessoa('Luccas', 23);
+const ana = new Pessoa('Ana', 13);
 
-console.log(luccas)
+compararPessoas(luccas, ana);
