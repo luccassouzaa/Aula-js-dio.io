@@ -38,7 +38,6 @@ function aplicarDesconto(valor, desconto) {
 
 function aplicarJuros(valor, juros) {
     return (valor + (valor * (juros / 100)));
-
 }
 
 function modoPag(formaDePagamento) {
