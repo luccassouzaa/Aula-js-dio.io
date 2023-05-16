@@ -26,10 +26,4 @@ pokeApi.getPokemons.then((pokemons) => {
             const pokemon = pokemons[i];
             pokemonList.innerHTML += convertPokemonToLi(pokemon);           
         }
-    }) 
-        // o que vai para o 2 then é o retorno do primeiro
-
-    .catch((error) => console.error(error)) 
-        // error se o then nao funcionar
-
-    //Promise maioria das vezes iremos retornar uma requisição de uma API
+})
