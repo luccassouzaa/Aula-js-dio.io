@@ -21,3 +21,54 @@ Exemplo do proprio site: https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20
     offset = 20 //pagina
     limit = 20 //limite por pagina
 
+Request Headers:
+    São areas de dados que podemos transmitir e receber coisas do servidor
+    *Meta dados* : descrever ou complementar nossa descrição
+
+    Exemplo: https://pokeapi.co/api/v2/pokemon/?offset=4&limit=2
+
+    Response Headers: 
+        Configuração da nossa API
+        Autenticação;
+        
+    Request Headers: 
+        Configuração da nossa API
+        Autenticação;
+
+    Devolve: json
+
+    Accept: 
+        text/html,
+        application/xhtml+xml,
+        application/xml;q=0.9,
+        image/avif,
+        image/webp,
+        image/apng,
+        */*;q=0.8,
+        application/signed-exchange;v=b3;q=0.7
+
+    Accept-language: *Prioridades*
+        pt-BR,
+        pt;q=0.9,
+        en-US;q=0.8,
+        en;q=0.7
+
+        "content-type: application/json"
+
+Body: *Dependendo do tipo de Request Method*
+    Dados que eu quero trafegar
+    Body faz mais sentido no POST
+
+    Body{
+        "name": "teste"
+    }
+
+Status Code: *O que aconteceu com nossa requisição*
+    Apenas um numero que retorna
+    200 a 299 = Sucesso
+    300 - 399 = Redirect
+    400 - 499 = Erro Client
+    500 - 599 = Erro Servidor
+
+Response Headers--
+Response Body--
