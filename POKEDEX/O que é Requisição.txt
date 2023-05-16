@@ -1,0 +1,23 @@
+
+Requisição HTTP
+
+URL: https://pokeapi.co/api/v2/pokemon/${id(dinamico)}
+     ${IP(Endereço)}/${path = Caminho de identificação do recurso}
+
+IP: https://pokeapi.co 
+    http://127.0.0.1:3000
+
+PATH: /api/v2/pokemon
+
+Request Method: GET | POST | PUT | DELETE (toda requisição para um recurso, o metodo diz oq eu a gente quer fazer com esse recurso)
+
+Caracteristicas: GET -> Buscar *As vezes passar algum parametro*
+    https://pokeapi.co/api/v2/pokemon/? -> query string ( chave e valor)
+    https://pokeapi.co/api/v2/pokemon/?type=grass&name=i (exemplo)
+    type = grass
+    name = i
+
+Exemplo do proprio site: https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20
+    offset = 20 //pagina
+    limit = 20 //limite por pagina
+
