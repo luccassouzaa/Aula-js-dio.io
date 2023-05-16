@@ -1,6 +1,10 @@
+const offset = 0
+const limit = 10
+const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
+
 
 function convertPokemonToLi(pokemon) {
-    return`
+    return `
         <li class="pokemon">
             <span class="number">#001</span> <!--Header-->
             <span class="name">${pokemon.name}</span> <!--Header-->
@@ -18,12 +22,16 @@ function convertPokemonToLi(pokemon) {
     `
 }
 
- const pokemonList = document.getElementById('pokemonList') // indo no html, pegando um elemento po id e adicionando ele numa variavel
-    //pokemonList.innerHTML += '<li>Teste</li>' // somando dentro da lista um filho na lista
+const pokemonList = document.getElementById('pokemonList') // indo no html, pegando um elemento po id e adicionando ele numa variavel
 
-pokeApi.getPokemons.then((pokemons) => {
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i];
-            pokemonList.innerHTML += convertPokemonToLi(pokemon);           
-        }
+pokeApi.getPokemons().then((pokemons) => {
+
+    const listItems = []
+
+    for (let i = 0; i < pokemons.length; i++) {
+        const pokemon = pokemons[i];
+        listItems.push(convertPokemonToLi(pokemon))
+    }
+    
+    console.log(listItems)
 })
