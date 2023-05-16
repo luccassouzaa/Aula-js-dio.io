@@ -70,5 +70,9 @@ Status Code: *O que aconteceu com nossa requisição*
     400 - 499 = Erro Client
     500 - 599 = Erro Servidor
 
+Status code também poderá ser uma resposta{
+    Return 201 = created.
+}
+
 Response Headers--
 Response Body--
