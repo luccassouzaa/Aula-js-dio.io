@@ -74,5 +74,7 @@ Status code também poderá ser uma resposta{
     Return 201 = created.
 }
 
+Status Code Dog
+
 Response Headers--
 Response Body--
