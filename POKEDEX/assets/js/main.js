@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList') // indo no html, pegando um elemento po id e adicionando ele numa variavel
 const loadMoreButton = document.getElementById('loadMoreButton');
-const maxRecords = 15;
-const limit = 5;
+const maxRecords = 151;
+const limit = 10;
 let offset = 0;
 
 function loadPokemonsItens (offset, limit) {
@@ -30,7 +30,6 @@ loadPokemonsItens(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit;
-    debugger
     const qtdRecordNextPage = offset + limit;
     if(qtdRecordNextPage >= maxRecords){
         const newLimit = maxRecords - offset
