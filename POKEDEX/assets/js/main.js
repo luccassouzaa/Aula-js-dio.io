@@ -1,12 +1,8 @@
 const pokemonList = document.getElementById('pokemonList') // indo no html, pegando um elemento po id e adicionando ele numa variavel
 const loadMoreButton = document.getElementById('loadMoreButton');
-const maxRecords = 11;
+const maxRecords = 15;
 const limit = 5;
 let offset = 0;
-
-
-
-
 
 function loadPokemonsItens (offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
