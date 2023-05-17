@@ -3,7 +3,7 @@
 var var1 = 10;
 var var2 = 'string';
 
-console.log(var1 - var2) 
+console.log(var1 - var2)
 
 // - nao tem influencia nas operações de string, então ele sempre ira transformar a string em numero
 // + tem influencia nas operações de string, entao ele sempre ira transformar o numero em string
